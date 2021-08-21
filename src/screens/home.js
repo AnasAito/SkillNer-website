@@ -1,5 +1,11 @@
 import React from 'react';
-
+import Header from '../sections/header';
+import Features from '../sections/features';
 export default function Home() {
-  return <div>this is home</div>;
+  return (
+    <div>
+      <Header />
+      <Features />
+    </div>
+  );
 }
