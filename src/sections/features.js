@@ -33,16 +33,23 @@ const transferFeatures = [
 const communicationFeatures = [
   {
     id: 1,
-    name: 'Mobile notifications',
+    name: ' Job recomendation ',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'We all know the pain of finding the right job offers that suit our skillset . with SkillNer we restruture thousand of job postings  in order suggest you the best job offers that match your skills',
     icon: AnnotationIcon,
   },
   {
     id: 2,
-    name: 'Reminder emails',
+    name: 'Know more about your skills',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'with skillNer extractor we processed thousands of moroccan  job postings to learn about skills trends and interactions ',
+    icon: MailIcon,
+  },
+  {
+    id: 3,
+    name: 'Up to date ',
+    description:
+      'We parse evry week key job ad websites to give you  new opportunities that suits you ',
     icon: MailIcon,
   },
 ];
@@ -103,8 +110,8 @@ export default function Features() {
             </h3>
             <p className="mt-3 text-lg text-gray-500">
               SkillNer help recruiters find the best candidates for their
-              needs.by parsing through applicant's resumes extracting not only
-              strutured skills but also implicit skills hiddem in resume
+              needs.by parsing through their applicant's resumes extracting not
+              only strutured skills but also implicit skills hiddem in resume
               unstructured text
             </p>
 
@@ -163,7 +170,7 @@ export default function Features() {
             <img
               className="relative mx-auto rounded-lg shadow-md"
               width={490}
-              src="https://www.linkpicture.com/q/feat1.png"
+              src="https://www.linkpicture.com/q/feat1_1.png"
               alt=""
             />
           </div>
@@ -207,12 +214,12 @@ export default function Features() {
           <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div className="lg:col-start-2">
               <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
-                Always in the loop
+                Job seekers in the loop{' '}
+                <span className="text-purple-500   underline">for free</span>
               </h3>
               <p className="mt-3 text-lg text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                ex obcaecati natus eligendi delectus, cum deleniti sunt in
-                labore nihil quod quibusdam expedita nemo.
+                SkillNer main quest is to fix job market and job seekers are a
+                key component of it .
               </p>
 
               <dl className="mt-10 space-y-10">
@@ -269,9 +276,9 @@ export default function Features() {
                 />
               </svg>
               <img
-                className="relative mx-auto"
+                className="relative mx-auto  rounded-lg shadow-lg"
                 width={490}
-                src="https://tailwindui.com/img/features/feature-example-2.png"
+                src="https://www.linkpicture.com/q/feat2.png"
                 alt=""
               />
             </div>
