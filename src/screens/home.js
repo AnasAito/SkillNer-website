@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import Header from '../sections/header';
 import Features from '../sections/features';
+import Faqs from '../sections/faq';
 import Newsletter from '../sections/newsletter';
 import Footer from '../sections/footer';
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <div ref={myRef}>
         <Features />
       </div>
+      <Faqs />
       <Newsletter />
       <Footer />
     </div>

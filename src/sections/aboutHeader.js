@@ -15,7 +15,7 @@ const navigation = [
   { name: 'About us', href: '/about', isLocal: true },
 ];
 
-export default function Header({ executeScroll }) {
+export default function AboutHeader() {
   let history = useHistory();
   return (
     <div className="relative bg-gray-50 overflow-hidden">
@@ -196,45 +196,6 @@ export default function Header({ executeScroll }) {
             </Popover.Panel>
           </Transition>
         </Popover>
-
-        <main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
-          <div className="text-center    mx-56 ">
-            <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-              <span className=" block   xl:inline">
-                Closing the gap between{' '}
-                <span className=" text-indigo-600 ">job applicants</span> and{' '}
-                <span className=" text-indigo-600 ">companies.</span>
-              </span>{' '}
-            </h1>
-            <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-              SkillNer is a{' '}
-              <span className="text-black font-semibold">NLP</span> service to
-              automaticly{' '}
-              <span className="text-black font-semibold">
-                extract skills and certifications
-              </span>{' '}
-              from job positings and applicant's resumes .
-            </p>
-            <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
-              <div className="rounded-md shadow">
-                <a
-                  href="https://share.streamlit.io/anasaito/skillner_demo/index.py"
-                  className="w-full no-underline flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
-                >
-                  Live demo
-                </a>
-              </div>
-              <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-                <button
-                  onClick={executeScroll}
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
-                >
-                  Explore features
-                </button>
-              </div>
-            </div>
-          </div>
-        </main>
       </div>
     </div>
   );
