@@ -10,7 +10,7 @@ const navigation = [
   { name: 'About us', href: '#' },
 ];
 
-export default function Header() {
+export default function Header({ executeScroll }) {
   return (
     <div className="relative bg-gray-50 overflow-hidden">
       <div
@@ -205,16 +205,16 @@ export default function Header() {
             </p>
             <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
               <div className="rounded-md shadow">
-                <button
-                  href="#"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                <a
+                  href="https://share.streamlit.io/anasaito/skillner_demo/index.py"
+                  className="w-full no-underline flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
                 >
                   Live demo
-                </button>
+                </a>
               </div>
               <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
                 <button
-                  href="#"
+                  onClick={executeScroll}
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
                 >
                   Explore features
