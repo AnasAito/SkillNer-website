@@ -133,7 +133,7 @@ export default function Header({ executeScroll }) {
                   </button>
                 ))}
               </div>
-              <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
+              {/* <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
                 <span className="inline-flex rounded-md shadow">
                   <button
                     href="#"
@@ -142,7 +142,7 @@ export default function Header({ executeScroll }) {
                     Log in
                   </button>
                 </span>
-              </div>
+              </div> */}
             </nav>
           </div>
 
@@ -186,19 +186,19 @@ export default function Header({ executeScroll }) {
                     </button>
                   ))}
                 </div>
-                <button
+                {/* <button
                   href="#"
                   className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
                 >
                   Log in
-                </button>
+                </button> */}
               </div>
             </Popover.Panel>
           </Transition>
         </Popover>
 
         <main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
-          <div className="text-center    mx-56 ">
+          <div className="text-center    md:mx-56 ">
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
               <span className=" block   xl:inline">
                 Closing the gap between{' '}

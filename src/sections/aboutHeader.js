@@ -133,7 +133,7 @@ export default function AboutHeader() {
                   </button>
                 ))}
               </div>
-              <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
+              {/* <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
                 <span className="inline-flex rounded-md shadow">
                   <button
                     href="#"
@@ -142,7 +142,7 @@ export default function AboutHeader() {
                     Log in
                   </button>
                 </span>
-              </div>
+              </div> */}
             </nav>
           </div>
 
@@ -186,12 +186,12 @@ export default function AboutHeader() {
                     </button>
                   ))}
                 </div>
-                <button
+                {/* <button
                   href="#"
                   className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
                 >
                   Log in
-                </button>
+                </button> */}
               </div>
             </Popover.Panel>
           </Transition>
