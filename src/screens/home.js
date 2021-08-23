@@ -4,6 +4,7 @@ import Features from '../sections/features';
 import Faqs from '../sections/faq';
 import Newsletter from '../sections/newsletter';
 import Footer from '../sections/footer';
+import Timeline from '../sections/timeline';
 export default function Home() {
   const myRef = useRef(null);
   const executeScroll = () =>
@@ -15,8 +16,10 @@ export default function Home() {
       <div ref={myRef}>
         <Features />
       </div>
+      <Timeline />
       <Faqs />
       <Newsletter />
+
       <Footer />
     </div>
   );
