@@ -1,0 +1,42 @@
+@keyframes to-up {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+svg.logo #s, 
+svg.logo #k, 
+svg.logo #information, 
+svg.logo #l1, 
+svg.logo #l2, 
+svg.logo #n, 
+svg.logo #e, 
+svg.logo #r {
+    transform: translateY(-100%);
+    animation-fill-mode: forwards;
+    animation-duration: 700ms;
+    animation-timing-function: ease-in;
+    animation-name: to-up;
+}
+
+svg.logo  #s {
+    animation-delay: 0ms;
+}
+svg.logo  #k {
+    animation-delay: 300ms;
+}
+svg.logo  #information {  
+    animation-delay: 600ms;
+}
+svg.logo  #l1 { 
+    animation-delay: 900ms;
+}
+svg.logo  #l2 { 
+    animation-delay: 1200ms;
+}
+svg.logo  #n, #e, #r {            
+    animation-delay: 1500ms;
+}
