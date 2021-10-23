@@ -1,25 +1,21 @@
 /* This example requires Tailwind CSS v2.0+ */
 const faqs = [
   {
-    question: 'How do you make holy water?',
+    question: 'Why SkillNer  is open source?',
     answer:
-      'You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.',
+      "3 months ago we wanted to create an application based on job postings but didn't find any free tools to make them.  So we took the initiative and start a toolkit soo all developers can use or contribute to it",
   },
   {
-    question: 'How do you make holy water?',
+    question: 'How to contribute?',
     answer:
-      'You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.',
+      "Our code extracts well skills but can't be perfect. that is why we need your help either by visiting  our GitHub repository or joining the discussion to stay in the loop ",
   },
   {
-    question: 'How do you make holy water?',
+    question: 'What is the motivation behind skillner ?',
     answer:
-      'You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.',
+      'Skillner is only a part of a toolkit that contains not only code but also datasets to enrich your apps.  we hope it will be the first option when building labor-related application.',
   },
-  {
-    question: 'How do you make holy water?',
-    answer:
-      'You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.',
-  },
+
   // More questions...
 ];
 
@@ -33,14 +29,14 @@ export default function Faqs() {
               Frequently asked questions
             </h2>
             <p className="mt-4 text-lg text-gray-500">
-              Can’t find the answer you’re looking for? Reach out to our{' '}
+              Can’t find the answer you’re looking for? Reach out to{' '}
               <a
                 href="#"
                 className="font-medium text-indigo-600 hover:text-indigo-500"
               >
-                customer support
+                us
               </a>{' '}
-              team.
+              .
             </p>
           </div>
           <div className="mt-12 lg:mt-0 lg:col-span-2">

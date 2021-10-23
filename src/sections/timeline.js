@@ -41,26 +41,33 @@ const TimelineElement = ({ TimelineElementData }) => (
 );
 const TimelineElementDataList = [
   {
-    date: '21 June 2021',
-    title: 'Open source lunch',
-    description: 'we re lunching the open source version of skillNer',
-    tag: 'Production',
+    date: '28 October 2021',
+    title: 'SkillNer First release',
+    description:
+      'We are releasing the frist open source version of skillner for free.',
+    tag: 'Codebase',
     color: 'bg-red-200',
     icon: <MailIcon />,
   },
   {
-    date: '21 June 2021',
-    title: 'Open source lunch',
-    description: 'we re lunching the open source version of skillNer',
-    tag: 'Production',
-    color: 'bg-red-200',
+    date: '10 November 2021',
+    title: 'Open labor knowledge graph V.1 ',
+    description: (
+      <span>
+        We are releasing the first{' '}
+        <span class="font-bold text-black">Morrocan labor knowldge graph </span>{' '}
+        using skillner on published job ads .{' '}
+      </span>
+    ),
+    tag: 'Datasets',
+    color: 'bg-yellow-200',
     icon: <MailIcon />,
   },
   {
-    date: '21 June 2021',
-    title: 'Open source lunch',
-    description: 'we re lunching the open source version of skillNer',
-    tag: 'Production',
+    date: '21 December 2021',
+    title: 'Job Title ontology mapper',
+    description: 'A new product is joining the skilllner stack very soon ..',
+    tag: 'Codebase',
     color: 'bg-red-200',
     icon: <MailIcon />,
   },
@@ -109,9 +116,9 @@ export default function Timeline() {
               SkillNer RoadMap
             </h2>
             <p className="mt-4 max-w-3xl mx-auto text-center text-xl text-gray-500">
-              SkillNer is a skill extractor at the core yet , it unlock tons of
-              features so recruters find best matches for their needs and
-              applicants learn more about the job market
+              SkillNer is a skill extractor at the core yet, it is just the
+              <span class="font-bold"> first brick of a large toolkit </span> to
+              help labor market actors.
             </p>
           </div>
 

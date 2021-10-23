@@ -14,7 +14,7 @@ const navigation = [
     href: 'https://share.streamlit.io/anasaito/skillner_demo/index.py',
     isLocal: false,
   },
-  { name: 'About us', href: '/about', isLocal: true },
+  // { name: 'About us', href: '/about', isLocal: true },
   { name: 'Docs', href: '/about', isLocal: true },
 ];
 
@@ -209,11 +209,11 @@ export default function Header({ executeScroll }) {
             <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
               SkillNer is a{' '}
               <span className="text-black font-semibold">NLP</span> module to
-              automaticly{' '}
+              automatically{' '}
               <span className="text-black font-semibold">
-                extract skills and certifications
+                Extract skills and certifications
               </span>{' '}
-              from unstrtured job positings texts and applicant's resumes .
+              from unstructured job postings, texts and applicant's resumes.
             </p>
             <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
               <div className="rounded-md shadow">
