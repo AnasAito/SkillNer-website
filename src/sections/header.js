@@ -7,14 +7,15 @@ import { useHistory } from 'react-router-dom';
 import { SkillNerSVG } from '../icons/skillnerSVG';
 
 const navigation = [
-  { name: 'Product', href: '/', isLocal: true },
+  { name: 'How it works', href: '/', isLocal: true },
   { name: 'Features', href: '/', isLocal: true },
   {
-    name: 'Demo',
+    name: 'Contribute',
     href: 'https://share.streamlit.io/anasaito/skillner_demo/index.py',
     isLocal: false,
   },
   { name: 'About us', href: '/about', isLocal: true },
+  { name: 'Docs', href: '/about', isLocal: true },
 ];
 
 export default function Header({ executeScroll }) {
@@ -102,15 +103,6 @@ export default function Header({ executeScroll }) {
             >
               <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
                 <div className="flex items-center justify-between w-full md:w-auto">
-                  <a href="#">
-                    <span className="sr-only">Workflow</span>
-                    {/* <img
-                      className="h-8 w-auto sm:h-10"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                      alt=""
-                    /> */}
-                    <SkillNerSVG heigh="50px" width="150px"/>
-                  </a>
                   <div className="-mr-2 flex items-center md:hidden">
                     <Popover.Button className="bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                       <span className="sr-only">Open main menu</span>
@@ -213,15 +205,15 @@ export default function Header({ executeScroll }) {
                 <span className=" text-indigo-600 ">companies.</span>
               </span>{' '}
             </h1>
-            
+
             <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
               SkillNer is a{' '}
-              <span className="text-black font-semibold">NLP</span> service to
+              <span className="text-black font-semibold">NLP</span> module to
               automaticly{' '}
               <span className="text-black font-semibold">
                 extract skills and certifications
               </span>{' '}
-              from job positings and applicant's resumes .
+              from unstrtured job positings texts and applicant's resumes .
             </p>
             <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
               <div className="rounded-md shadow">
@@ -233,12 +225,12 @@ export default function Header({ executeScroll }) {
                 </a>
               </div>
               <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-                <button
-                  onClick={executeScroll}
+                <a
+                  href="https://github.com/AnasAito/SkillNer"
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
                 >
-                  Explore features
-                </button>
+                  Github
+                </a>
               </div>
             </div>
           </div>
