@@ -7,11 +7,17 @@ import { useHistory } from 'react-router-dom';
 import { SkillNerSVG } from '../icons/skillnerSVG';
 
 const navigation = [
-  { name: 'How it works', href: '/', isLocal: true },
-  { name: 'Features', href: '/', isLocal: true },
+  { name: 'How it works', href: '/', isLocal: true, scroll: true },
   {
-    name: 'Contribute',
-    href: 'https://share.streamlit.io/anasaito/skillner_demo/index.py',
+    name: 'Chat with us',
+    href: '/',
+    href: 'https://discord.com/invite/R7EsDBf3eN',
+    isLocal: false,
+  },
+  //{ name: 'Chat with us', href: '/', isLocal: true },
+  {
+    name: <span className="  text-purple-700 font-semibold ">Contribute</span>,
+    href: 'https://github.com/AnasAito/SkillNER#contribute',
     isLocal: false,
   },
   // { name: 'About us', href: '/about', isLocal: true },
@@ -121,6 +127,9 @@ export default function Header({ executeScroll }) {
                       } else {
                         window.open(item.href, '_blank');
                       }
+                      if (item.scroll) {
+                        executeScroll();
+                      }
                     }}
                     className="font-medium text-gray-500 hover:text-gray-900"
                   >
@@ -171,9 +180,9 @@ export default function Header({ executeScroll }) {
                   </div>
                 </div>
                 <div className="px-2 pt-2 pb-3">
-                  {navigation.map((item) => (
+                  {navigation.map((index, item) => (
                     <button
-                      key={item.name}
+                      key={index}
                       href={item.href}
                       className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                     >
@@ -202,7 +211,7 @@ export default function Header({ executeScroll }) {
               <span className=" block   xl:inline">
                 Closing the gap between{' '}
                 <span className=" text-indigo-600 ">job applicants</span> and{' '}
-                <span className=" text-indigo-600 ">companies.</span>
+                <span className=" text-indigo-600 ">recruiters.</span>
               </span>{' '}
             </h1>
 

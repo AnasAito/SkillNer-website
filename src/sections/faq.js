@@ -31,7 +31,7 @@ export default function Faqs() {
             <p className="mt-4 text-lg text-gray-500">
               Can’t find the answer you’re looking for? Reach out to{' '}
               <a
-                href="#"
+                href="https://discord.com/invite/R7EsDBf3eN"
                 className="font-medium text-indigo-600 hover:text-indigo-500"
               >
                 us

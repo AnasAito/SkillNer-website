@@ -14,10 +14,12 @@ export default function Home() {
   return (
     <div>
       <Header executeScroll={executeScroll} />
+
+      <Features />
+
       <div ref={myRef}>
-        <Features />
+        <HowItWork />
       </div>
-      <HowItWork />
       <Timeline />
       <Faqs />
       <Newsletter />
