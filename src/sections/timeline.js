@@ -10,6 +10,9 @@ import {
   LightningBoltIcon,
   MailIcon,
   ScaleIcon,
+  CodeIcon,
+  DatabaseIcon,
+  ShareIcon,
 } from '@heroicons/react/outline';
 
 const TimelineElement = ({ TimelineElementData }) => (
@@ -47,7 +50,7 @@ const TimelineElementDataList = [
       'We are releasing the frist open source version of skillner for free.',
     tag: 'Codebase',
     color: 'bg-red-200',
-    icon: <MailIcon />,
+    icon: <CodeIcon />,
   },
   {
     date: '10 November 2021',
@@ -61,7 +64,7 @@ const TimelineElementDataList = [
     ),
     tag: 'Datasets',
     color: 'bg-yellow-200',
-    icon: <MailIcon />,
+    icon: <ShareIcon />,
   },
   {
     date: '21 December 2021',
@@ -69,7 +72,7 @@ const TimelineElementDataList = [
     description: 'A new product is joining the skilllner stack very soon ..',
     tag: 'Codebase',
     color: 'bg-red-200',
-    icon: <MailIcon />,
+    icon: <CodeIcon />,
   },
 ];
 export default function Timeline() {

@@ -3,17 +3,17 @@ const faqs = [
   {
     question: 'Why SkillNer  is open source?',
     answer:
-      "3 months ago we wanted to create an application based on job postings but didn't find any free tools to make them.  So we took the initiative and start a toolkit soo all developers can use or contribute to it",
+      "3 months ago we wanted to create an application based on job postings.  But didn't find any free tools to make them.  That's why we took the initiative and start a toolkit so all developers can use or contribute to it",
   },
   {
     question: 'How to contribute?',
     answer:
-      "Our code extracts well skills but can't be perfect. that is why we need your help either by visiting  our GitHub repository or joining the discussion to stay in the loop ",
+      "Our code works well but can't be perfect. that is why we need your help . Either by visiting  our GitHub repository or by joining the discussion to stay in the loop ",
   },
   {
     question: 'What is the motivation behind skillner ?',
     answer:
-      'Skillner is only a part of a toolkit that contains not only code but also datasets to enrich your apps.  we hope it will be the first option when building labor-related application.',
+      'Skillner is only a part of a toolkit that contains not only code but also datasets to enrich your apps.  we hope it will be the first option when building labor-related application in the future.',
   },
 
   // More questions...
