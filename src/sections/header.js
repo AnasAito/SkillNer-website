@@ -21,7 +21,7 @@ const navigation = [
     isLocal: false,
   },
   // { name: 'About us', href: '/about', isLocal: true },
-  { name: 'Docs', href: '/about', isLocal: true },
+  { name: 'Docs', href: 'https://skillner-docs.herokuapp.com/', isLocal: true },
 ];
 
 export default function Header({ executeScroll }) {
