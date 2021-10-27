@@ -6,6 +6,7 @@ import Newsletter from '../sections/newsletter';
 import Footer from '../sections/footer';
 import Timeline from '../sections/timeline';
 import HowItWork from '../sections/howItWork';
+import Acknowlgment from '../sections/acknowlgment';
 export default function Home() {
   const myRef = useRef(null);
   const executeScroll = () =>
@@ -21,6 +22,7 @@ export default function Home() {
         <HowItWork />
       </div>
       <Timeline />
+      <Acknowlgment />
       <Faqs />
       <Newsletter />
 
